@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+ <div id="minecraft">
+<form>
+		<h2>Kontakt</h2>
+	<hr>
+	<table>
+	<tr>
+    <td>Imię:</td><td> <input type="text" id="imie"></td>
+	</tr>
+	<tr>
+    <td>Nazwisko: </td><td><input type="text" id="nazwisko"></td>
+	</tr>
+	<tr>
+    <td>E-mail:</td><td> <input type="text" id="email"></td>
+	</tr>
+	<tr>
+    <td>Usługa:</td><td><input type="text" id="usl"></td>
+	</tr>
+	<tr>
+    <td><input type="checkbox" id="check"></td><td>Zapoznałam/em się z regulaminem</td>
+	</tr>
+<tr>
+    <td><input type="reset" value="Resetuj" id="reset"></td>
+	<td><input type="submit"value="Prześlij" id="send" onclick="funkcja()"></td>
+</tr>
+</table>
+
+</form>
+ <p id="xd"></p>
+<hr>
+</div>
+<script>
+function funkcja()
+{
+var imie=document.getElementById("imie").value
+var check=document.getElementById("check").checked
+var usl=document.getElementById("usl").value
+var email=document.getElementById("email").value
+var nazwisko=document.getElementById("nazwisko").value
+
+if(checked){ 
+    xd.innerHTML=imie + nazwisko + "Treść twojej sprawy:" + usl + "Na podany email zostanie wysłana oferta: " + email; 
+}
+else{
+    xd.innerHTML="Musisz zapoznać się z regulaminem";
+}
+}
+
+
+</script>
+</body>
+</html>

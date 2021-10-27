@@ -1,0 +1,14 @@
+body{
+    background-color: #EEEEEE;
+}
+#glowny{
+    margin: 50px;
+}
+table{
+    text-align: left;
+}
+hr{
+    background-color: #C0C0C0;
+    width: 70%;
+    height: 2px;
+}

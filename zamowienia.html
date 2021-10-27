@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>zadanie</title>
+</head>
+<body>
+<section>
+    Podaj numer kawy <br>
+        <input type="number" id="numer" max="3"> <br>
+        Podaj wagę w dekagramach <br>
+        <input type="number" id="waga"> <br>
+        <button onclick="licz()"> Zamów </button>
+    <p id="wybor"></p>
+  </section>
+  <table style="border: 2px solid black;">
+  <tr>
+        <td >Numer kawy</td>
+        <td>Nazwa</td>
+        <td>Cena za 1 dekagram</td>
+  </tr>
+  <tr>
+        <td>1</td>
+        <td>Kawa palona Arabica</td>
+        <td>5 zł</td>
+  </tr>
+   <tr>
+        <td>2</td>
+        <td>Kawa palona Robusta</td>
+        <td>7 zł</td>
+  </tr>
+   <tr>
+        <td>3</td>
+        <td>Kawa bezkofeinowa</td>
+        <td>6 zł</td>
+  </tr>
+</table>
+    <script>
+    function licz(){
+      var waga = document.getElementById("waga").value;
+      var numer = document.getElementById("numer").value;
+
+      if (numer == 1){
+        koszt = waga * 5;
+      }
+      else if (numer == 2){
+        koszt = waga * 7;
+      }
+      else if (numer == 3){
+        koszt = waga * 6;
+      }
+      else{
+        koszt = 0;
+      }
+
+      document.getElementById("wybor").innerHTML = "Koszt zamówienia wynosi: " +koszt+ "zł";
+    }
+  </script>
+</body>
+</html>
